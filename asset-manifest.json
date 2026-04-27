@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Stripes-Website2.0/static/css/main.d9d2b58d.css",
+    "main.js": "/Stripes-Website2.0/static/js/main.dd680c8c.js",
+    "static/media/stripeslogo.png": "/Stripes-Website2.0/static/media/stripeslogo.b78bcb3de239b540fe15.png",
+    "index.html": "/Stripes-Website2.0/index.html",
+    "main.d9d2b58d.css.map": "/Stripes-Website2.0/static/css/main.d9d2b58d.css.map",
+    "main.dd680c8c.js.map": "/Stripes-Website2.0/static/js/main.dd680c8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9d2b58d.css",
+    "static/js/main.dd680c8c.js"
+  ]
+}
