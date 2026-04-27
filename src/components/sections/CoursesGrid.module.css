@@ -1,0 +1,65 @@
+.section {
+  padding: var(--section-pad) var(--side-pad);
+  background: linear-gradient(180deg, #05192D 0%, #030E1A 100%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: rgba(43,111,168,0.1);
+}
+
+.card {
+  background: #070F1A;
+  padding: clamp(28px,4vw,44px) clamp(24px,3.5vw,44px) clamp(24px,3vw,36px);
+  display: flex; flex-direction: column;
+  transition: background 0.25s;
+  cursor: pointer;
+}
+.card:hover { background: rgba(11,42,74,0.85); }
+
+.cardNum {
+  font-family: var(--font-condensed);
+  font-size: 11px; font-weight: 600; letter-spacing: 2px;
+  color: var(--orange); margin-bottom: 18px;
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: clamp(20px,2.2vw,26px); font-weight: 700;
+  color: var(--white); margin-bottom: 12px; line-height: 1.2;
+}
+
+.cardDesc {
+  font-size: 14px; line-height: 1.75; color: var(--text-light);
+  font-weight: 300; flex: 1;
+}
+
+.cardFooter {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 24px; padding-top: 20px;
+  border-top: 1px solid rgba(200,216,232,0.1);
+}
+
+.duration {
+  font-family: var(--font-condensed); font-size: 11px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-light);
+}
+
+.arrow {
+  width: 34px; height: 34px;
+  border: 1px solid rgba(200,216,232,0.18);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--orange); font-size: 16px;
+  transition: all 0.25s;
+}
+.card:hover .arrow {
+  background: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: 1fr; }
+}

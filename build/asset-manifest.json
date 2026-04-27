@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9d2b58d.css",
+    "main.js": "/static/js/main.22a677f7.js",
+    "static/media/stripeslogo.png": "/static/media/stripeslogo.b78bcb3de239b540fe15.png",
+    "index.html": "/index.html",
+    "main.d9d2b58d.css.map": "/static/css/main.d9d2b58d.css.map",
+    "main.22a677f7.js.map": "/static/js/main.22a677f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9d2b58d.css",
+    "static/js/main.22a677f7.js"
+  ]
+}

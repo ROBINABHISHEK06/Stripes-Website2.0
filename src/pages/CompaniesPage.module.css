@@ -1,0 +1,85 @@
+.section { padding: var(--section-pad) var(--side-pad); }
+
+.intro {
+  font-size: 16px; line-height: 1.8; color: var(--mist);
+  font-weight: 300; max-width: 700px; margin-bottom: 64px;
+}
+
+/* Benefits */
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: rgba(43,111,168,0.1);
+  margin-bottom: 80px;
+}
+.benefit {
+  background: rgba(5,25,45,0.96);
+  padding: clamp(28px,3.5vw,44px) clamp(24px,3vw,40px);
+  transition: background 0.25s;
+}
+.benefit:hover { background: rgba(11,42,74,0.97); }
+.benefitIcon { font-size: 28px; margin-bottom: 18px; display: block; }
+.benefitTitle {
+  font-family: var(--font-condensed); font-size: 16px; font-weight: 700;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  color: var(--white); margin-bottom: 12px;
+}
+.benefitText {
+  font-size: 14px; line-height: 1.75; color: var(--text-light); font-weight: 300;
+}
+
+/* Process */
+.processSection { margin-bottom: 80px; }
+.processTitle {
+  font-family: var(--font-display); font-size: clamp(28px,3vw,42px);
+  font-weight: 700; color: var(--white); margin-bottom: 40px;
+}
+.processTitle em { font-style: italic; color: var(--mist); }
+
+.steps { display: flex; flex-direction: column; gap: 2px; }
+.step {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  align-items: start;
+  background: rgba(5,25,45,0.9);
+  padding: 28px 32px;
+  transition: background 0.25s;
+}
+.step:hover { background: rgba(11,42,74,0.95); }
+.stepNum {
+  font-family: var(--font-display); font-size: 48px; font-weight: 700;
+  color: rgba(232,130,26,0.25); line-height: 1;
+}
+.stepTitle {
+  font-family: var(--font-condensed); font-size: 15px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase; color: var(--white);
+  margin-bottom: 6px;
+}
+.stepText {
+  font-size: 14px; line-height: 1.7; color: var(--text-light); font-weight: 300;
+}
+
+/* Companies strip */
+.companiesStrip {
+  background: rgba(11,42,74,0.4);
+  border: 1px solid var(--border);
+  padding: 48px clamp(24px,3.5vw,48px);
+  text-align: center;
+}
+.stripTitle {
+  font-family: var(--font-condensed); font-size: 12px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--orange);
+  margin-bottom: 28px;
+}
+.stripText {
+  font-family: var(--font-display); font-size: clamp(18px,2.5vw,26px);
+  font-style: italic; color: var(--mist); max-width: 640px; margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .benefitsGrid { grid-template-columns: 1fr; }
+  .step { grid-template-columns: 56px 1fr; }
+}
